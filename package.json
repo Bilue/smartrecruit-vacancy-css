@@ -1,0 +1,19 @@
+{
+  "name": "smartrecruit-vacancy-css",
+  "version": "1.0.0",
+  "description": "Custom CSS for customizing the smartrecruit Vacancies table styles",
+  "main": "index.js",
+  "repository": "https://github.com/Bilue/smartrecruit-vacancy-css.git",
+  "author": "Benny Guo <bennyxguo6@gmail.com>",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^4.0.0",
+    "vite-plugin-html-env": "^1.2.7"
+  }
+}

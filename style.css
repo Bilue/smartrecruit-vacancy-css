@@ -1,0 +1,36 @@
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: #fff;
+  font-family: Manrope, sans-serif;
+  color: #10131f;
+  font-size: 1vw;
+  line-height: 1em;
+  font-weight: 400;
+  margin: 0;
+}
+
+.flex-box {
+  display: flex;
+  flex-direction: column;
+  max-width: 1500px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 8em;
+  padding-left: 8em;
+}
+
+h1 {
+  max-width: 15.5em;
+  margin-bottom: 1.1em;
+  color: #10131f;
+  font-size: 3.8em;
+  line-height: 1.4em;
+  font-weight: 500;
+}

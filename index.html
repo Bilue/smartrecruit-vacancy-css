@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div class="flex-box">
+      <div id="app"></div>
+      <script
+        type="text/javascript"
+        src="https://static.smartrecruiters.com/job-widget/1.6.2/script/smart_widget.js"
+      ></script>
+      <script type="text/javascript" class="job_widget">
+        widget({
+          company_code: '<{ VITE_COMPANY_CODE }>',
+          bg_color_widget: '#FFFFFF',
+          bg_color_headers: '#FFFFFF',
+          bg_color_links: '#52DDF1',
+          txt_color_headers: '#292929',
+          txt_color_job: '#3D3D3D',
+          bg_color_even_row: '#F1F1F1',
+          bg_color_odd_row: '#FFFFFF',
+          auto_width: 'auto',
+          auto_height: 'auto',
+          number: 'on',
+          job_title: 'true',
+          location: 'true',
+          dateFormat: 'us',
+          filter_locations: 'Sydney',
+          departments_field_id: '<{ VITE_DEPARTMENTS_FIELD_ID }>',
+          jobAdType: 'PUBLIC',
+          trid: '',
+          api_url: 'https://www.smartrecruiters.com',
+          job_ad_url: 'https://jobs.smartrecruiters.com'
+        });
+      </script>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
