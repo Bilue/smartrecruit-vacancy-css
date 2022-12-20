@@ -1,7 +1,35 @@
 :root {
+  --smartrecruit-title-font-size: 1.3em;
   --smartrecruit-font-size: 1.2em;
   --smartrecruit-font-family: Manrope, sans-serif;
   --smartrecruit-globe-icon-size: 1.2em;
+  --smartrecruit-cell-padding: 1.4em 1.2em;
+  --smartrecruit-cell-padding-title: 1em 1.2em;
+}
+
+@media screen and (max-width: 991px) {
+  :root {
+    --smartrecruit-cell-padding-title: 1em 1.2em;
+    --smartrecruit-cell-padding: 1.4em 1.2em;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  :root {
+    --smartrecruit-cell-padding-title: 1em 1em;
+    --smartrecruit-title-font-size: 1.2em;
+    --smartrecruit-font-size: 1.1em;
+    --smartrecruit-cell-padding: 1.2em 1em;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  :root {
+    --smartrecruit-cell-padding-title: 1em 0.8em;
+    --smartrecruit-title-font-size: 1.1em;
+    --smartrecruit-font-size: 1em;
+    --smartrecruit-cell-padding: 1.1em 0.8em;
+  }
 }
 
 .smartWidget *,
@@ -31,14 +59,14 @@
 
 .srJobList .srJobListTitles * {
   margin: 0;
-  padding: 8px 10px;
+  padding: var(--smartrecruit-cell-padding-title);
   border: none;
   /*background: #969696 url(./widget_list_bg.png) repeat-x top left;*/
   background: #969696 none;
   color: #292929;
   text-align: left;
   font-family: var(--smartrecruit-font-family);
-  font-size: var(--smartrecruit-font-size);
+  font-size: var(--smartrecruit-title-font-size);
   font-weight: 600;
 }
 
@@ -54,7 +82,7 @@ nobr {
 
 .srJobList .srJobListJobEven * {
   margin: 0;
-  padding: 6px 10px;
+  padding: var(--smartrecruit-cell-padding);
   border: none;
   background-color: #e0e0e0;
   /*background-image: url(./widget_list_bg.png);*/
@@ -81,7 +109,7 @@ tr.srJobListJobEven {
 
 .srJobList .srJobListJobOdd * {
   margin: 0;
-  padding: 6px 10px;
+  padding: var(--smartrecruit-cell-padding);
   border: none;
   background-color: #f7f7f7;
   /*background-image: url(./widget_list_bg.png);*/
