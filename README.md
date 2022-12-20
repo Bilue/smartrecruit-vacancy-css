@@ -32,4 +32,4 @@ cat .env.example > .env
 
 ## Deployment
 
-Simply replace the `custom_css_url` widget parameter with `https://raw.github.com/Bilue/smartrecruit-vacancy-css/main/widget.css`.
+Simply replace the `custom_css_url` widget parameter with `https://bilue.github.io/smartrecruit-vacancy-css/widget.css`.

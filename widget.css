@@ -7,31 +7,6 @@
   --smartrecruit-cell-padding-title: 1em 1.2em;
 }
 
-@media screen and (max-width: 991px) {
-  :root {
-    --smartrecruit-cell-padding-title: 1em 1.2em;
-    --smartrecruit-cell-padding: 1.4em 1.2em;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  :root {
-    --smartrecruit-cell-padding-title: 1em 1em;
-    --smartrecruit-title-font-size: 1.2em;
-    --smartrecruit-font-size: 1.1em;
-    --smartrecruit-cell-padding: 1.2em 1em;
-  }
-}
-
-@media screen and (max-width: 479px) {
-  :root {
-    --smartrecruit-cell-padding-title: 1em 0.8em;
-    --smartrecruit-title-font-size: 1.1em;
-    --smartrecruit-font-size: 1em;
-    --smartrecruit-cell-padding: 1.1em 0.8em;
-  }
-}
-
 .smartWidget *,
 .smartWidget *:focus,
 .smartWidget *:active {
@@ -516,4 +491,35 @@ tr.srJobListJobOdd {
 
 .display--none {
   display: none;
+}
+
+@media screen and (max-width: 991px) {
+  :root {
+    --smartrecruit-cell-padding-title: 1em 1.2em;
+    --smartrecruit-cell-padding: 1.4em 1.2em;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  :root {
+    --smartrecruit-cell-padding-title: 1em 1em;
+    --smartrecruit-title-font-size: 1.2em;
+    --smartrecruit-font-size: 1.1em;
+    --smartrecruit-cell-padding: 1.2em 1em;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  :root {
+    --smartrecruit-cell-padding-title: 1em 0.8em;
+    --smartrecruit-title-font-size: 1.1em;
+    --smartrecruit-font-size: 1em;
+    --smartrecruit-cell-padding: 1.1em 0.8em;
+  }
+  .srRemoteLocation:after {
+    height: 0;
+    width: 0;
+    margin-left: 0;
+    content: '';
+  }
 }
